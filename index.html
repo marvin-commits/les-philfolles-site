@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Les Philfolles | Swingende vrouwenbrassband uit Maastricht</title>
+  <meta name="description" content="Les Philfolles is een swingende vrouwenbrassband uit Maastricht. Pop, rock, chansons, funk & soul — altijd feest, altijd energie." />
+
+  <meta property="og:title" content="Les Philfolles" />
+  <meta property="og:description" content="Swingende vrouwenbrassband uit Maastricht — live, mobiel en altijd feest." />
+  <meta property="og:image" content="/assets/img/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="/assets/img/logo.png" />
+  <link rel="preload" href="/assets/css/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Naar inhoud</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Les Philfolles">
+        <img class="brand__logo" src="/assets/img/logo.png" alt="Les Philfolles logo" width="191" height="94" />
+      </a>
+
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <a href="#optredens">Optredens</a>
+        <a href="#over">Over</a>
+        <a href="#fotos">Foto’s</a>
+        <a href="#boeken">Boeken</a>
+      </nav>
+
+      <button class="navbtn" id="navbtn" aria-expanded="false" aria-controls="navpanel">Menu</button>
+    </div>
+
+    <div class="navpanel" id="navpanel" hidden>
+      <div class="container navpanel__inner">
+        <a href="#optredens" class="navpanel__link">Optredens</a>
+        <a href="#over" class="navpanel__link">Over</a>
+        <a href="#fotos" class="navpanel__link">Foto’s</a>
+        <a href="#boeken" class="navpanel__link">Boeken</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__bg" role="img" aria-label="Les Philfolles bandfoto" style="background-image:url('/assets/img/hero.jpg')"></div>
+      <div class="container hero__inner">
+        <div class="hero__card">
+          <p class="kicker" id="tagline">Femmes fanfares · Maastricht</p>
+          <h1>Les Philfolles</h1>
+          <p class="lead" id="intro">
+            Swingende vrouwenbrassband uit Maastricht. Pop, rock, chansons, funk & soul — met energie, karakter en vooral veel plezier.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="#optredens">Bekijk de agenda</a>
+            <a class="btn btn--ghost" href="#boeken">Boek ons</a>
+          </div>
+          <div class="hero__meta" id="quickfacts"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="optredens">
+      <div class="container">
+        <div class="section__head">
+          <h2>Optredens</h2>
+          <p class="muted">Snel bijwerken? Ga naar <strong>/admin</strong> om de agenda aan te passen (na activatie van Netlify Identity).</p>
+        </div>
+
+        <div class="grid2">
+          <div>
+            <h3 class="h3">Binnenkort</h3>
+            <div id="events-upcoming" class="cards" aria-live="polite"></div>
+          </div>
+          <div>
+            <h3 class="h3">Later</h3>
+            <div id="events-later" class="cards" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="section__foot">
+          <a class="link" id="icsLink" href="#" download="les-philfolles.ics">Agenda downloaden (iCal)</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="over">
+      <div class="container">
+        <div class="section__head">
+          <h2>Over Les Philfolles</h2>
+        </div>
+
+        <div class="grid2">
+          <div>
+            <p id="about1"></p>
+            <p id="about2"></p>
+            <div class="pillrow" id="genres"></div>
+          </div>
+
+          <div class="callout">
+            <h3 class="h3">Waarom werkt dit live zo goed?</h3>
+            <ul class="check">
+              <li>Mobiel: wij spelen tussen de mensen — op straat, op pleinen, in cafés.</li>
+              <li>Repertoire met herkenning: frisse hits én gouden klassiekers.</li>
+              <li>Altijd feest: energie die je voelt en die het publiek meeneemt.</li>
+            </ul>
+            <p class="muted" id="highlights"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fotos">
+      <div class="container">
+        <div class="section__head">
+          <h2>Foto’s</h2>
+          <p class="muted">Nieuwe foto’s toevoegen kan super simpel via <strong>/admin</strong> (upload + onderschrift).</p>
+        </div>
+
+        <div class="gallery" id="gallery" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="boeken">
+      <div class="container">
+        <div class="section__head">
+          <h2>Boeken & contact</h2>
+          <p class="muted">Voor boekingen, vragen of pers: stuur ons een bericht.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="cards">
+            <div class="card">
+              <h3 class="h3">Booking</h3>
+              <p id="bookingName"></p>
+              <p>
+                <a class="link" id="bookingEmail" href="#">Email</a><br />
+                <a class="link" id="bookingPhone" href="#">Bel/WhatsApp</a>
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 class="h3">Volg ons</h3>
+              <p class="muted">Optredens en nieuwtjes.</p>
+              <div class="social" id="social"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Snel een aanvraag doen</h3>
+            <form class="form" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="booking" />
+              <p class="hidden">
+                <label>Laat dit leeg: <input name="bot-field" /></label>
+              </p>
+              <label>
+                Naam
+                <input required name="name" autocomplete="name" />
+              </label>
+              <label>
+                Email
+                <input required type="email" name="email" autocomplete="email" />
+              </label>
+              <label>
+                Datum / event
+                <input name="event" placeholder="Bijv. 10 okt, Jekerjazz" />
+              </label>
+              <label>
+                Bericht
+                <textarea required name="message" rows="5" placeholder="Locatie, tijd, sfeer, budget, etc."></textarea>
+              </label>
+              <button class="btn" type="submit">Verstuur</button>
+              <p class="muted small">Dit formulier werkt zonder server (Netlify Forms). Na submit vind je inzendingen in Netlify.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <img src="/assets/img/logo.png" alt="Les Philfolles" width="170" height="83" />
+        <p class="muted small" id="footerLine"></p>
+      </div>
+      <div class="footer__links">
+        <a href="#optredens">Optredens</a>
+        <a href="#over">Over</a>
+        <a href="#fotos">Foto’s</a>
+        <a href="#boeken">Boeken</a>
+        <a href="/admin/" rel="nofollow">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Sluiten">×</button>
+    <img id="lightboxImg" alt="" />
+    <p class="lightbox__cap" id="lightboxCap"></p>
+  </dialog>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

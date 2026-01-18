@@ -1,0 +1,109 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "site"
+    label: "Site instellingen"
+    format: "json"
+    extension: "json"
+    files:
+      - name: "settings"
+        label: "Teksten & links"
+        file: "content/site.json"
+        fields:
+          - { label: "Bandnaam", name: "bandName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Hero tekst", name: "heroText", widget: "string" }
+          - label: "Knoppen"
+            name: "cta"
+            widget: "object"
+            fields:
+              - label: "Primair"
+                name: "primary"
+                widget: "object"
+                fields:
+                  - { label: "Tekst", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+              - label: "Secundair"
+                name: "secondary"
+                widget: "object"
+                fields:
+                  - { label: "Tekst", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+          - { label: "Over-titel", name: "aboutTitle", widget: "string" }
+          - { label: "Over-tekst", name: "aboutText", widget: "text" }
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Tekst", name: "text", widget: "string" }
+          - label: "Boekingen"
+            name: "booking"
+            widget: "object"
+            fields:
+              - { label: "Sectietitel", name: "title", widget: "string" }
+              - { label: "Contactpersonen", name: "contacts", widget: "string" }
+              - { label: "E-mail", name: "email", widget: "string" }
+              - { label: "Telefoon", name: "phone", widget: "string" }
+              - { label: "Extra tekst", name: "note", widget: "text", required: false }
+          - label: "Socials"
+            name: "socials"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "YouTube URL", name: "youtube", widget: "string", required: false }
+          - label: "Video"
+            name: "video"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string", required: false }
+              - { label: "YouTube embed URL", name: "embedUrl", widget: "string", required: false }
+          - { label: "Footer tekst", name: "footerText", widget: "string", required: false }
+
+  - name: "agenda"
+    label: "Optreden-agenda"
+    format: "json"
+    extension: "json"
+    files:
+      - name: "events"
+        label: "Optredens"
+        file: "content/events.json"
+        fields:
+          - label: "Optredens"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.title}} ({{fields.city}})"
+            fields:
+              - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Locatie / podium", name: "venue", widget: "string", required: false }
+              - { label: "Stad", name: "city", widget: "string", required: false }
+              - { label: "Tijd", name: "time", widget: "string", required: false }
+              - { label: "Link", name: "url", widget: "string", required: false }
+              - { label: "Opmerking", name: "notes", widget: "string", required: false }
+
+  - name: "fotos"
+    label: "Foto's"
+    format: "json"
+    extension: "json"
+    files:
+      - name: "gallery"
+        label: "Galerij"
+        file: "content/photos.json"
+        fields:
+          - label: "Foto's"
+            name: "photos"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Afbeelding", name: "image", widget: "image" }
+              - { label: "Bijschrift", name: "caption", widget: "string", required: false }
+              - { label: "Credit", name: "credit", widget: "string", required: false }

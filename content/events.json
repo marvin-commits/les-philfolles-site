@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "date": "2025-10-10",
+      "title": "Jekerjazz Maastricht",
+      "venue": "John Mullins Pub",
+      "city": "Maastricht",
+      "time": "Tijd volgt",
+      "url": "https://jekerjazz.com",
+      "notes": ""
+    },
+    {
+      "date": "2025-10-18",
+      "title": "Jeneverfeesten",
+      "venue": "Binnenstad",
+      "city": "Hasselt",
+      "time": "13:00–18:00",
+      "url": "https://www.visithasselt.be",
+      "notes": ""
+    }
+  ]
+}

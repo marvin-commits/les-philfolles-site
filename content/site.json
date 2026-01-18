@@ -1,0 +1,36 @@
+{
+  "bandName": "Les Philfolles",
+  "tagline": "Swingende vrouwenbrassband uit Maastricht",
+  "heroText": "Pop • rock • chansons • funk • soul — live, mobiel en altijd feest.",
+  "ctaPrimary": {"label": "Boek ons", "href": "#boekingen"},
+  "ctaSecondary": {"label": "Bekijk agenda", "href": "#optredens"},
+  "aboutTitle": "Over Les Philfolles",
+  "aboutText": "Les Philfolles is een swingende vrouwenbrassband uit Maastricht. Al meer dan drie decennia brengen we een mix van pop, rock, chansons, funk en soul — van frisse hits tot gouden klassiekers. We spelen het liefst midden tussen de mensen: op pleinen, in kroegen en op festivals. Verwacht energie, karakter en vooral veel plezier.",
+  "highlights": [
+    {"title": "Sinds 1989", "text": "Opgericht in Maastricht — en nog steeds even hongerig naar een goed feest."},
+    {"title": "Mobiel & dichtbij", "text": "Wij komen naar het publiek toe: lopend, dansend en spelend."},
+    {"title": "Breed repertoire", "text": "Van pop tot funk en soul — altijd met Philfolles-swing."}
+  ],
+  "booking": {
+    "title": "Boekingen & contact",
+    "contacts": "Desiree Nijst / Mireille Delvoux",
+    "email": "lesphilfolles@gmail.com",
+    "phone": "+31 6 30721712",
+    "note": "Voor boekingen: mail of bel ons. Reageertijden zijn meestal snel — zeker als het om een leuk feest gaat."
+  },
+  "press": {
+    "title": "Press kit",
+    "text": "Organiseer je een festival of evenement? We sturen graag foto’s in hoge resolutie, een korte bio en technische info.",
+    "button": {"label": "Vraag press kit aan", "href": "#boekingen"}
+  },
+  "socials": {
+    "facebook": "https://www.facebook.com/lesphilfolles.fanfaredefemmes/",
+    "instagram": "",
+    "youtube": ""
+  },
+  "video": {
+    "title": "Live sfeer",
+    "embedUrl": ""
+  },
+  "footerText": "© Les Philfolles"
+}
